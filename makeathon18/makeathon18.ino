@@ -41,7 +41,7 @@ void setup() {
 
     
     // initialize digital pin LED_BUILTIN as an output.
-    pinMode(3, INPUT);
+    //pinMode(3, INPUT);
 
 
     //buzzer
@@ -77,7 +77,7 @@ void loop() {
     lcd.display();
     lcd.setRGB(255, 255, 0);
     tone(2, 1000,1000);
-    int touch_sensor = digitalRead(3);
+
     lcd.setCursor(0, 1);
     lcd.print("Usage time: 15s!");
 
