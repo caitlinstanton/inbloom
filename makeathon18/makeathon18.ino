@@ -40,10 +40,6 @@ void setup() {
     Serial.begin(9600);
 
     
-   
-    int servo1_on=0;
-    int servo2_on=0;
-    int servo3_on=0;
     // initialize digital pin LED_BUILTIN as an output.
     pinMode(3, INPUT);
 
@@ -133,15 +129,15 @@ void loop() {
     servo3_on=1;
   }
   if(servo1_on==1){
-    myservo1.write(90);
+    myservo1.write(179);
     servo1_on=2;
   }
   if(servo2_on==1){
-    myservo2.write(90);
+    myservo2.write(179);
         servo2_on=2;
   }
   if(servo3_on==1){
-    myservo3.write(90);
+    myservo3.write(179);
     servo3_on=2;
   }
 }
